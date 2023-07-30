@@ -1,6 +1,8 @@
 <?php
 namespace Exporter;
 
+use Exception;
+
 class TextExporter extends Exporter
 {
     protected $format = '.txt';

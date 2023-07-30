@@ -1,5 +1,6 @@
 <?php
 namespace Exporter;
+use Exception;
 class PdfExporter extends Exporter
 {
     protected $format = '.pdf';
