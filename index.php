@@ -80,7 +80,7 @@
 
 <body>
     <div class='main'>
-        <h1>7Learn Exporter</h1>
+        <h1>File Exporter</h1>
         <form action="" method="post">
             <input type="text" name="title" placeholder="Title Here">
             <textarea name="content" placeholder="Content Here" style="height: 100px"></textarea>

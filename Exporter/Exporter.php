@@ -18,9 +18,12 @@ abstract class Exporter implements Exportable
     public function __construct($data)
     {
         $this->data = $data;
+        if (!$this->is_valid()) {
+            exit('invalid data!');
+        }
     }
 
-    public static function is_valid()
+    public function is_valid(): bool
     {
         foreach ($this->data as $field) {
             if (empty($field)) {
