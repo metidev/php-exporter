@@ -1,5 +1,5 @@
 <?php
-include "Exporter.php";
+namespace Exporter;
 
 class JsonExporter extends Exporter
 {
@@ -16,6 +16,3 @@ class JsonExporter extends Exporter
         echo "$file_name successfully exported\n";
     }
 }
-
-$obj = new JsonExporter(['title' => 'test', 'content' => 'test2']);
-$obj->export();

@@ -1,13 +1,8 @@
 <?php
-
+namespace Exporter;
 interface Exportable
 {
     public function export();
-}
-
-interface Importable
-{
-    public function import();
 }
 
 abstract class Exporter implements Exportable

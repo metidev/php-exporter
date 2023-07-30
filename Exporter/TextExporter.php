@@ -1,5 +1,5 @@
 <?php
-include "Exporter.php";
+namespace Exporter;
 
 class TextExporter extends Exporter
 {
@@ -16,6 +16,3 @@ class TextExporter extends Exporter
         echo "$file_name successfully exported\n";
     }
 }
-
-$textExporter = new TextExporter(['title' => 'test', 'content' => 'test2']);
-$textExporter->export();

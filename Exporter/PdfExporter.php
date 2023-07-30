@@ -1,5 +1,5 @@
 <?php
-include "Exporter.php";
+namespace Exporter;
 class PdfExporter extends Exporter
 {
     protected $format = '.pdf';
@@ -15,5 +15,3 @@ class PdfExporter extends Exporter
         echo "$file_name successfully exported\n";
     }
 }
-$obj = new PdfExporter(['title' => 'test', 'content' => 'test2']);
-$obj->export();
